@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_margin="35dp">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="331dp"
+        android:layout_height="199dp"
+        android:src="@drawable/suisse" />
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Question??"
+        android:textColor="@color/purple_500"
+        android:textSize="22sp" />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 1"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+        <RadioButton android:id="@+id/radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 2"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+        <RadioButton android:id="@+id/radio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 3"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+        <RadioButton android:id="@+id/radio_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 3"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick"
+            />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:id="@+id/bNext"
+            app:backgroundTint="@color/BlueViolet"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_margin="35dp">
+
+    <ImageView
+        android:layout_width="331dp"
+        android:layout_height="247dp"
+        android:src="@drawable/quiz" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="Login" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPasswordL"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        app:backgroundTint="@color/DeepPink"
+        />
+
+
+
+    <Button
+        android:id="@+id/bGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In With Google"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/DodgerBlue"
+        android:drawableLeft="@drawable/ic_google_icon"/>
+
+    />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="To Register Click here"
+        android:textColor="@color/DarkBlue"
+        android:textSize="22sp"
+        android:clickable="true"/>
+
+</LinearLayout>
